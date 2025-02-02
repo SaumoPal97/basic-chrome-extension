@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Basic Chrome Extension",
+    "version": "1.0",
+    "description": "A simple Chrome extension with a popup and UI manipulation.",
+    "permissions": [
+        "scripting",
+        "activeTab"
+    ],
+    "host_permissions": [
+        "https://chatgpt.com/*"
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": "icon.png"
+    },
+    "background": {
+        "service_worker": "background.js"
+    }
+}
